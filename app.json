@@ -1,0 +1,56 @@
+{
+  "name": "AdvancedMusicBot",
+  "description": "Telegram Voice Chat Music Bot with Queue, Inline Controls, MongoDB & Assistant Support",
+  "logo": "https://telegra.ph/file/9f1f4a9e7b7c8f9e7b7c8.jpg",
+  "keywords": [
+    "telegram",
+    "music-bot",
+    "voice-chat",
+    "pyrogram",
+    "pytgcalls",
+    "mongodb"
+  ],
+  "repository": "https://github.com/yourusername/yourrepo",
+  "success_url": "/",
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from BotFather",
+      "required": true
+    },
+    "SESSION_STRING": {
+      "description": "Pyrogram assistant session string",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    },
+    "START_PIC": {
+      "description": "Public image URL for start message banner",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
