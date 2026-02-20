@@ -12,7 +12,7 @@
   ],
   "repository": "https://github.com/yourusername/yourrepo",
   "success_url": "/",
-  "stack": "heroku-20",
+  "stack": "heroku-24",
   "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
