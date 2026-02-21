@@ -1,7 +1,6 @@
 pyrogram==2.0.106
 tgcrypto==1.2.5
-pytgcalls==3.0.0.dev5
-tgcalls==3.0.0.dev5
+pytgcalls==2.1.0
 yt-dlp==2024.8.6
 pymongo==4.6.1
 motor==3.3.2
